@@ -35,9 +35,8 @@ const Contact = () => {
             
             {/* MY SOCIAL LINKS ADDED HERE */}
             <div className="flex gap-8 mb-8 text-[11px] font-black uppercase tracking-[0.2em]">
-              <a href="https://github.com/your-username" target="_blank" rel="noreferrer" className="hover:text-blue-600 transition-colors">Github</a>
-              <a href="https://x.com/your-username" target="_blank" rel="noreferrer" className="hover:text-blue-600 transition-colors">Twitter</a>
-              <a href="https://linkedin.com/in/your-username" target="_blank" rel="noreferrer" className="hover:text-blue-600 transition-colors">Linkedin</a>
+              <a href="https://github.com/AABams-Dev" target="_blank" rel="noreferrer" className="hover:text-blue-600 transition-colors">Github</a>
+              <a href="https://x.com/ABams01" target="_blank" rel="noreferrer" className="hover:text-blue-600 transition-colors">Twitter</a>
             </div>
 
             <div className="flex gap-6 text-[10px] font-bold uppercase tracking-widest text-gray-500">

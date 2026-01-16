@@ -1,77 +1,71 @@
 import React from 'react';
-import { MdOutlineAgriculture, MdAccountBalance, MdCode, MdMusicNote } from "react-icons/md";
+import { MdPeople, MdCode, MdLayers } from "react-icons/md";
 
 const About = () => {
   return (
-    // Added id="about" for smooth scrolling
-    <section id="about" className="py-24 px-10 md:px-24 bg-tg-gray font-sans border-y border-gray-100">
+    <section id="about" className="py-24 px-10 md:px-24 bg-white font-sans border-y border-gray-100">
       <div className="max-w-6xl mx-auto">
         
         {/* SECTION TITLE */}
         <div className="mb-16">
-          <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-tg-text-muted mb-4">The Journey</h2>
-          <h3 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-tg-black leading-[0.9]">
+          <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-gray-400 mb-4">The Journey</h2>
+          <h3 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-black leading-[0.9]">
             Real Life. <br /> 
             <span className="text-gray-400">Real Impact.</span>
           </h3>
-          <div className="w-20 h-1 bg-blue-600 mt-8"></div> {/* Visual accent to match Hero */}
+          <div className="w-20 h-1 bg-blue-600 mt-8"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
-          {/* LEFT: The Narrative (Main Bio) */}
-          <div className="lg:col-span-7 space-y-6 text-lg text-tg-black leading-relaxed">
+          {/* LEFT: The Narrative */}
+          <div className="lg:col-span-7 space-y-6 text-lg text-black leading-relaxed">
             <p className="font-bold">
-              Ayobami Arinade is a front-end engineer, Web3 builder, and creative thinker shaped by real-world experience.
+              Ayobami Arinade is a front-end engineer and Web3 builder driven by community and ecosystem growth.
             </p>
-            <p className="text-tg-text-muted">
-              With a strong foundation in Web2 and a growing footprint in Web3, Ayobami brings a rare blend of technical skill, business understanding, and human-centered design to every project.
+            <p className="text-gray-500">
+              With a strong foundation in Web2 and a deep commitment to the decentralized future, Ayobami brings technical skill and strategic community management to every project he touches.
             </p>
-            <p className="text-tg-text-muted">
-              Before tech, he sharpened his understanding of scale in the banking sector (First Bank), insurance and agriculture. These roles taught him structure, risk, and communication—lessons he now applies to the blockchain.
+            <p className="text-gray-500">
+              He currently serves as a <b>Community Moderator at Kairos Bridge</b>, focusing on building inclusive digital spaces and bridging the gap between developers and users.
             </p>
             
             {/* HACKATHON WINS SECTION */}
             <div className="pt-8 border-t border-gray-300">
               <h4 className="text-[10px] font-black uppercase tracking-widest mb-4 text-blue-600">Hackathon Track Record</h4>
-              <p className="text-sm text-tg-text-muted italic">
-                Contributed to 4+ winning hackathons alongside David Patrick and other elite developers, perfecting the art of rapid product development and team-led problem solving.
+              <p className="text-sm text-gray-500 italic">
+                Contributed to 4+ winning hackathons alongside David Patrick and other elite developers, focusing on rapid prototyping and user-centric blockchain solutions.
               </p>
             </div>
           </div>
 
-          {/* RIGHT: Experience "Pillars" */}
+          {/* RIGHT: Professional Pillars */}
           <div className="lg:col-span-5 flex flex-col gap-4">
             
-            <div className="group bg-white p-6 border border-gray-200 shadow-sm flex items-center gap-5 hover:border-blue-600 transition-all duration-300">
-              <div className="text-tg-black group-hover:scale-110 transition-transform"><MdAccountBalance size={24} /></div>
+            {/* PILLAR 1: COMMUNITY MODERATION */}
+            <div className="group bg-white p-8 border border-gray-200 shadow-sm flex items-center gap-5 hover:border-blue-600 transition-all duration-300">
+              <div className="text-black group-hover:scale-110 transition-transform"><MdPeople size={28} /></div>
               <div>
-                <p className="text-[10px] font-black uppercase tracking-widest">Finance & Admin</p>
-                <p className="text-xs text-tg-text-muted text-nowrap">First Bank | Insurance Officer</p>
+                <p className="text-[10px] font-black uppercase tracking-widest">Community Operations</p>
+                <p className="text-sm font-bold text-black">Moderator | Carriers Bridge</p>
               </div>
             </div>
 
-            <div className="group bg-white p-6 border border-gray-200 shadow-sm flex items-center gap-5 hover:border-blue-600 transition-all duration-300">
-              <div className="text-tg-black group-hover:scale-110 transition-transform"><MdCode size={24} /></div>
+            {/* PILLAR 2: WEB3 AMBASSADOR - GOATNETWORK & NEXUSLABS */}
+            <div className="group bg-white p-8 border border-gray-200 shadow-sm flex items-center gap-5 hover:border-blue-600 transition-all duration-300">
+              <div className="text-black group-hover:scale-110 transition-transform"><MdCode size={28} /></div>
               <div>
                 <p className="text-[10px] font-black uppercase tracking-widest">Web3 Ecosystem</p>
-                <p className="text-xs text-tg-text-muted">Ambassador: NexusLabs & GOATNetwork</p>
+                <p className="text-sm font-bold text-black">Ambassador: NexusLabs & GOATNetwork</p>
               </div>
             </div>
 
-            <div className="group bg-white p-6 border border-gray-200 shadow-sm flex items-center gap-5 hover:border-blue-600 transition-all duration-300">
-              <div className="text-tg-black group-hover:scale-110 transition-transform"><MdOutlineAgriculture size={24} /></div>
+            {/* PILLAR 3: DEVELOPMENT STACK */}
+            <div className="group bg-black p-8 text-white flex items-center gap-5 shadow-lg">
+              <div className="text-blue-400"><MdLayers size={28} /></div>
               <div>
-                <p className="text-[10px] font-black uppercase tracking-widest">Real-World Ops</p>
-                <p className="text-xs text-tg-text-muted">Press Operations | Land Farming</p>
-              </div>
-            </div>
-
-            <div className="bg-tg-black p-6 text-white flex items-center gap-5 shadow-lg">
-              <div className="text-blue-400 animate-pulse"><MdMusicNote size={24} /></div>
-              <div>
-                <p className="text-[10px] font-black uppercase tracking-widest text-blue-400">Creative Rhythm</p>
-                <p className="text-xs opacity-80">Piano Player & Creative Thinker</p>
+                <p className="text-[10px] font-black uppercase tracking-widest text-blue-400">Core Expertise</p>
+                <p className="text-sm font-bold">Front-End & Web3 Architecture</p>
               </div>
             </div>
 
