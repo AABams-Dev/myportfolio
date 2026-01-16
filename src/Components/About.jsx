@@ -47,7 +47,7 @@ const About = () => {
               <div className="text-black group-hover:scale-110 transition-transform"><MdPeople size={28} /></div>
               <div>
                 <p className="text-[10px] font-black uppercase tracking-widest">Community Operations</p>
-                <p className="text-sm font-bold text-black">Moderator | Carriers Bridge</p>
+                <p className="text-sm font-bold text-black">Moderator | KairosBridge</p>
               </div>
             </div>
 
