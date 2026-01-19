@@ -45,7 +45,7 @@ const Hero = () => {
               <span className="text-transparent" style={{WebkitTextStroke: '1px black'}}>ARINADE</span>
             </h1>
             <p className="text-gray-500 max-w-md text-lg leading-relaxed">
-              I help brands and entrepreneurs build digital experiences that are functional, beautiful and high-impact.
+              I partner with brands and entrepreneurs to design and build digital experiences that are not only visually stunning, but functional, scalable and built to deliver measurable results.
             </p>
             
             <a href="#work" className="inline-block mt-10 border-2 border-black px-12 py-4 font-bold uppercase tracking-widest text-[10px] hover:bg-black hover:text-white transition-all">
